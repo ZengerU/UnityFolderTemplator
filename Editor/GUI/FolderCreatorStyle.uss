@@ -1,0 +1,24 @@
+﻿FolderView{
+    padding: 3px;
+    margin: 6px 2px 2px 6px;
+    border-width: 1px;
+    border-color: #838383;
+}
+FileView{
+    padding: 3px;
+    margin: 3px;
+    margin-left: 10px;
+    border-width: 1px;
+    border-color: #535353;
+    flex-direction: row-reverse;
+}
+FolderTogglePanel{
+    border-width: 1px;
+    border-color: rgba(255, 250, 0, 0.25);
+}
+TextField{
+    margin: 5px;
+}
+.unity-toggle__text{
+    margin-left: 5px;
+}

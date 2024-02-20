@@ -1,0 +1,23 @@
+﻿using System.IO;
+using UnityEngine.UIElements;
+
+namespace FolderCreator.Editor.GUI
+{
+    public sealed class FileView : Toggle
+    {
+        readonly File _file;
+
+        public FileView(File file)
+        {
+            _file = file;
+            text = string.Format(Path.GetFileName(file.Target ), "<folder_name>");
+            value = file.IsEnabled;
+            this.RegisterValueChangedCallback(OnValueChanged);
+        }
+
+        void OnValueChanged(ChangeEvent<bool> evt)
+        {
+            _file.IsEnabled = evt.newValue;
+        }
+    }
+}
