@@ -1,4 +1,4 @@
-namespace FolderCreator.Editor
+namespace UnityFolderTemplator.Editor
 {
     public class File
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace FolderCreator.Editor
+namespace UnityFolderTemplator.Editor
 {
     public class Folder
     {

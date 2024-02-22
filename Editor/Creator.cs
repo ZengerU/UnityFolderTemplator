@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using FolderCreator.Editor.GUI;
 using Unity.Plastic.Newtonsoft.Json;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityFolderTemplator.Editor.GUI;
 
-namespace FolderCreator.Editor
+namespace UnityFolderTemplator.Editor
 {
     public abstract class Creator : EditorWindow
     {

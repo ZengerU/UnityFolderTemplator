@@ -1,7 +1,7 @@
 {
-    "name": "FolderCreator.Editor",
+    "name": "UnityFolderTemplator.Editor",
     "rootNamespace": "",
-    "references": ["GUID:61e857e834426624aaf48b8fd0e6a2e8"],
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],

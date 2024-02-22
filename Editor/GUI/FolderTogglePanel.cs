@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine.UIElements;
 
-namespace FolderCreator.Editor.GUI
+namespace UnityFolderTemplator.Editor.GUI
 {
     public class FolderTogglePanel : VisualElement
     {

@@ -1,5 +1,5 @@
 {
-    "name": "FolderCreator.Samples.Editor",
+    "name": "UnityFolderTemplator.Samples.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:2a321d8850838004697114d59d77c65c"

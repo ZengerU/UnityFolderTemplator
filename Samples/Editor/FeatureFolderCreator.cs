@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.IO;
-using FolderCreator.Editor;
 using UnityEditor;
 using UnityEngine;
-using File = FolderCreator.Editor.File;
+using UnityFolderTemplator.Editor;
+using File = UnityFolderTemplator.Editor.File;
 
-namespace FolderCreator.Samples.Editor
+namespace UnityFolderTemplator.Samples.Editor
 {
     public class FeatureFolderCreator : Creator
     {

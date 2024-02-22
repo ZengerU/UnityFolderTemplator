@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UIElements;
 
-namespace FolderCreator.Editor.GUI
+namespace UnityFolderTemplator.Editor.GUI
 {
     public class FolderView : VisualElement
     {

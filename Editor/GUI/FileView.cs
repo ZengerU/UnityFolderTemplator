@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEngine.UIElements;
 
-namespace FolderCreator.Editor.GUI
+namespace UnityFolderTemplator.Editor.GUI
 {
     public sealed class FileView : Toggle
     {
