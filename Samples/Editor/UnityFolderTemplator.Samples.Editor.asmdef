@@ -2,7 +2,7 @@
     "name": "UnityFolderTemplator.Samples.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:2a321d8850838004697114d59d77c65c"
+        "GUID:909b6a3ac85f81e479a27061e5b106dc"
     ],
     "includePlatforms": [
         "Editor"
