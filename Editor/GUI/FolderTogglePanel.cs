@@ -1,16 +1,17 @@
-﻿using System.Collections.Generic;
-using UnityEngine.UIElements;
+﻿using UnityEngine.UIElements;
 
 namespace UnityFolderTemplator.Editor.GUI
 {
     public class FolderTogglePanel : VisualElement
     {
-        public FolderTogglePanel(List<Folder> folders)
+        readonly FolderView _folderView;
+
+        public FolderTogglePanel(Folder rootFolder)
         {
-            foreach (var folder in folders)
-            {
-                Add(new FolderView(folder));
-            }
+            _folderView = new FolderView(rootFolder);
+            Add(_folderView);
         }
+        
+        public void UpdateName(string name) => _folderView.UpdateName(name);
     }
 }

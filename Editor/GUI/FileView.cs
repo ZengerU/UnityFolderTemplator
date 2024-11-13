@@ -19,5 +19,10 @@ namespace UnityFolderTemplator.Editor.GUI
         {
             _file.IsEnabled = evt.newValue;
         }
+
+        public void UpdateName(string s)
+        {
+            text = string.Format(Path.GetFileName(_file.Target ), s);
+        }
     }
 }

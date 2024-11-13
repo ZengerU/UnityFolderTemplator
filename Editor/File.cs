@@ -1,3 +1,7 @@
+using System.IO;
+using UnityEditor;
+using UnityEngine;
+
 namespace UnityFolderTemplator.Editor
 {
     public class File
@@ -13,6 +17,13 @@ namespace UnityFolderTemplator.Editor
             Target = target;
             IsEnabled = defaultValue;
             IsAsmdef = isAsmdef;
+        }
+
+        public virtual void Copy(string name, string path)
+        {
+            var fileName = string.Format(Target, name);
+            var location = Path.Combine(path, fileName);
+            AssetDatabase.CopyAsset(Source, location);
         }
     }
 }

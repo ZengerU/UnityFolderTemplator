@@ -22,27 +22,26 @@ namespace UnityFolderTemplator.Samples.Editor
         static string TestEditorAsmdefLocation => Path.Combine(AsmdefRootLocation, "Feature.Editor.Tests.template");
         static string TestRuntimeAsmdefLocation => Path.Combine(AsmdefRootLocation, "Feature.Tests.template");
 
-
-        protected override List<Folder> Folders { get; } = new()
+        protected override Folder Folder { get; } = new("{0}", true, new List<Folder>
         {
-            new Folder("ArtAssets", true, new List<Folder>
+            new("ArtAssets", true, new List<Folder>
             {
                 new("Audio", false),
                 new("Image", false),
                 new("Video", false)
             }),
-            new Folder("Data", true),
-            new Folder("Editor", true, files: new List<File>
+            new("Data", true),
+            new("Editor", true, files: new List<File>
             {
                 new(EditorAsmdefLocation, "{0}.Editor.asmdef", true, true)
             }),
-            new Folder("Features", false),
-            new Folder("Prefabs", true),
-            new Folder("Runtime", true, files: new List<File>
+            new("Features", false),
+            new("Prefabs", true),
+            new("Runtime", true, files: new List<File>
             {
                 new(RuntimeAsmdefLocation, "{0}.asmdef", true, true)
             }),
-            new Folder("Tests", true, new List<Folder>
+            new("Tests", true, new List<Folder>
             {
                 new("Editor", true, files: new List<File>
                 {
@@ -53,6 +52,6 @@ namespace UnityFolderTemplator.Samples.Editor
                     new(TestRuntimeAsmdefLocation, "{0}.Tests.asmdef", true, true)
                 })
             }),
-        };
+        });
     }
 }
