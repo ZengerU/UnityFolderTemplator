@@ -38,17 +38,13 @@ namespace UnityFolderTemplator.Editor.GUI
 
         public void UpdateName(string s)
         {
-            _toggle.text = s;
+            _toggle.text = string.Format(_folder.Name, s);
             foreach (var child in _content.Children())
             {
                 if(child is FolderView folderView)
                     folderView.UpdateName(s);
                 if(child is FileView fileView)
                     fileView.UpdateName(s);
-            }
-            foreach (var child in _folder.ChildFolders)
-            {
-                
             }
         }
     }

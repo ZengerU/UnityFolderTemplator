@@ -33,23 +33,23 @@ namespace UnityFolderTemplator.Samples.Editor
             new("Data", true),
             new("Editor", true, files: new List<File>
             {
-                new(EditorAsmdefLocation, "{0}.Editor.asmdef", true, true)
+                new AssemblyDefinitionFile(EditorAsmdefLocation, "{0}.Editor.asmdef", true, true)
             }),
             new("Features", false),
             new("Prefabs", true),
             new("Runtime", true, files: new List<File>
             {
-                new(RuntimeAsmdefLocation, "{0}.asmdef", true, true)
+                new AssemblyDefinitionFile(RuntimeAsmdefLocation, "{0}.asmdef", true, true)
             }),
             new("Tests", true, new List<Folder>
             {
                 new("Editor", true, files: new List<File>
                 {
-                    new(TestEditorAsmdefLocation, "{0}.Tests.Editor.asmdef", true, true)
+                    new AssemblyDefinitionFile(TestEditorAsmdefLocation, "{0}.Tests.Editor.asmdef", true, true)
                 }),
                 new("Runtime", true, files: new List<File>
                 {
-                    new(TestRuntimeAsmdefLocation, "{0}.Tests.asmdef", true, true)
+                    new AssemblyDefinitionFile(TestRuntimeAsmdefLocation, "{0}.Tests.asmdef", true, true)
                 })
             }),
         });
