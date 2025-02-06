@@ -16,7 +16,7 @@ namespace UnityFolderTemplator.Samples.Editor
             wnd.maxSize = new Vector2(400, 600);
         }
 
-        const string AsmdefRootLocation = "Assets/Anonymouse/FolderTemplator/Samples/Templates/";
+        const string AsmdefRootLocation = "Assets/Anonymouse/Core/FolderTemplator/Samples/Templates/";
         static string EditorAsmdefLocation => Path.Combine(AsmdefRootLocation, "Feature.Editor.template");
         static string RuntimeAsmdefLocation => Path.Combine(AsmdefRootLocation, "Feature.template");
         static string TestEditorAsmdefLocation => Path.Combine(AsmdefRootLocation, "Feature.Editor.Tests.template");
